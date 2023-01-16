@@ -4,7 +4,7 @@
 ---
 ------
 ---[Official Documentation](https://tweaked.cc/library/cc.expect.html)
-expect = {}
+local expect = {}
 
 ---Expect an argument to be of a certain type
 ---@generic T

@@ -3,7 +3,7 @@
 ---Utilities for strings and text
 ------
 ---[Official Documentation](https://tweaked.cc/library/cc.strings.html)
-strings = {}
+local strings = {}
 
 ---Wraps a block of text so that each line fits within the specified width
 ---

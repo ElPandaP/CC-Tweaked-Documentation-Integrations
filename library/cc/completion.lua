@@ -4,7 +4,7 @@
 ---
 ------
 ---[Official Documentation](https://tweaked.cc/library/cc.completion.html)
-completion = {}
+local completion = {}
 
 ---Get completions from a choice of strings
 ---@param text string The incomplete string
