@@ -34,6 +34,7 @@ io.stderr = nil
 function io.close(handle) end
 
 ---Flushes the current output file, saving it without closing it
+---
 ------
 ---[Official Documentation](https://tweaked.cc/module/io.html#v:flush)
 function io.flush() end
