@@ -54,7 +54,7 @@ function Handle:lines(format) end
 ---Read data from the file using the specified format. For each format provided,
 ---returns either the data read or `nil` if no data could be read.
 ---@param ... readFormat The formats to use for reading. Defaults to `l`
----@return string ... The data (as a string) read from the file or nil if no data could be read.
+---@return string content The data (as a string) read from the file or nil if no data could be read.
 ------
 ---[Official Documentation](https://tweaked.cc/module/io.html#ty:Handle:read)
 function Handle:read(...) end
