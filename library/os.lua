@@ -127,7 +127,7 @@ function os.version() end
 function os.run(env, path, ...) end
 
 ---Adds an event to the event queue that can later be listened to with `os.pullEvent()`
----@param name event|string The name of the event to queue
+---@param name event The name of the event to queue
 ---@param ... any The parameters of the event that can be read later
 ---@triggers `any`
 ------
