@@ -4,6 +4,8 @@
 ---| '"r"' # read mode
 ---| '"w"' # write mode
 ---| '"a"' # append mode
+---| '"r+"' # read/write, data preserved
+---| '"w+"' # write, data erased
 ---| '"rb"' # binary read mode
 ---| '"wb"' # binary write mode
 ---| '"ab"' # binary append mode
