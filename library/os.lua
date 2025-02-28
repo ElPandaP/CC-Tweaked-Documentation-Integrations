@@ -37,10 +37,12 @@ function os.unloadAPI(name) end
 ---
 ---This works by yielding until it receives a vararg list where the first
 ---element matches the name of the event provided
+---@generic T : ccTweaked.os.event
 ---@async
----@param event? ccTweaked.os.event The event to listen for
----@return ccTweaked.os.event event The name of the event that fired
+---@param event? `T` The event to listen for
+---@return `T` event The name of the event that fired
 ---@return any ... Any values returned by the event
+---@overload fun(): ccTweaked.os.event, ...
 ---## Example
 ---```
 ---while true do
@@ -68,10 +70,12 @@ function os.pullEvent(event) end
 ---
 ---This works by yielding until it receives a vararg list where the first
 ---element matches the name of the event provided
+---@generic T : ccTweaked.os.event
 ---@async
----@param event? ccTweaked.os.event The event to listen for
----@return ccTweaked.os.event event The name of the event that fired
+---@param event? `T` The event to listen for
+---@return `T` event The name of the event that fired
 ---@return any ... Any values returned by the event
+---@overload fun(): ccTweaked.os.event, ...
 ---## Example
 ---```
 ---while true do
