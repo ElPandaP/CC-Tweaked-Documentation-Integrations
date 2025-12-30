@@ -75,4 +75,7 @@
 ---| '"new_iota"' # Fires when the focal port has a new iota written to it from the hex casting side. <hr/>[Official Documentation](https://github.com/SamsTheNerd/ducky-periphs/wiki/Focal-Port#events)
 ---| '"circle_activated"' # Fires when the impetus is activated. <hr/>[Official Documentation](https://github.com/SamsTheNerd/ducky-periphs/wiki/HexCasting-Peripherals#events)
 ---| '"circle_stopped"' # Fires when the impetus finishes or mishaps. <hr/>[Official Documentation](https://github.com/SamsTheNerd/ducky-periphs/wiki/HexCasting-Peripherals#events)
---- 
+--- CC:CBRIDGE EVENTS
+---| '"monitor_resize"' # Fires when a Source Block display size changes. <hr/>[Official Documentation](https://cccbridge.kleinbox.dev/peripherals/SourceBlockPeripheral/#events)
+---| '"redstone"' # Fires when the RedRouter detects a redstone change. <hr/>[Official Documentation](https://cccbridge.kleinbox.dev/peripherals/RedRouterBlockPeripheral/#events)
+---| '"scroller_changed"' # Fires when the Scroller Pane value changes. <hr/>[Official Documentation](https://cccbridge.kleinbox.dev/peripherals/ScrollerBlockPeripheral/#events)

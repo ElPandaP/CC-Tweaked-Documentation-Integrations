@@ -58,6 +58,11 @@
 ---|ccTweaked.peripherals.AkashicBookshelf
 ---|ccTweaked.peripherals.AkashicRecord
 ---|ccTweaked.peripherals.Impetus
+--- CC:CBRIDGE PERIPHERALS
+---|ccTweaked.peripherals.TargetBlock
+---|ccTweaked.peripherals.RedRouter
+---|ccTweaked.peripherals.ScrollerPane
+---|ccTweaked.peripherals.Animatronic
 
 ---@alias ccTweaked.peripherals.modem.channel integer A channel to be used with a modem (0 - 65535)
 
