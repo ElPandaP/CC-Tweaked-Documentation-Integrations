@@ -1,11 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_config.schema.json",
   "name": "CC: Tweaked",
-  "enabled_categories": [
-    "CREATE",
-    "DUCKY",
-    "HEXCASTING"
-  ],
   "words": [
     "turtle%.%w+",
     "rednet%.%w+",

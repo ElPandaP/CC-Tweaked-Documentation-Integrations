@@ -18,7 +18,7 @@ This is a fork from [CC-Tweaked Documentation](https://gitlab.com/carsakiller/cc
 3. In this folder, create a new folder named `CC-Tweaked`.
 4. Paste the contents from this repo in this new `CC-Tweaked` folder.
 5. Edit your [configuration file](https://luals.github.io/wiki/configuration/#configuration-file) and add the path to the folder containing your new `CC-Tweaked` folder to [`workspace.userThirdParty`](https://luals.github.io/wiki/settings/#workspaceuserthirdparty).
-6. If you want to disable some integrations, you should comment the integrations you want to disable in "config.json", then execute the python script "update-categories.py" (If you don't want to execute the script you can manually comment each category on peripheral.lua and os.lua inside library/types)
+6. If you want to disable some integrations, you should comment the integrations you want to disable in "update-categories.py", then execute it to update the documentation (If you don't want to execute the script you can manually comment each category on peripheral.lua and os.lua inside library/types)
 
 Now when you trigger one of the below cases you should be prompted to set up your workspace as a `CC: Tweaked` environment.
 

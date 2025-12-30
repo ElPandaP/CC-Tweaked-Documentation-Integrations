@@ -1,12 +1,20 @@
 #!/usr/bin/env python3
 """
-Script to update peripheral.lua and os.lua based on enabled categories from config.json
-Automatically detects all categories and applies enable/disable logic
+Script to update peripheral.lua and os.lua based on enabled categories.
+Automatically detects all categories and applies enable/disable logic.
+The enabled categories list now lives in this script (no longer read from config.json).
 """
 
-import json
 import re
 from pathlib import Path
+
+# Default enabled categories are defined here (moved from config.json).
+ENABLED_CATEGORIES = [
+    "CREATE",
+    "DUCKY",
+    "HEXCASTING",
+    "CC:CBRIDGE",
+]
 
 # Terminal colors
 class Colors:
@@ -15,59 +23,6 @@ class Colors:
     RED = '\033[91m'
     YELLOW = '\033[93m'
     RESET = '\033[0m'
-
-def strip_json_comments(text: str) -> str:
-    """Remove // comments from JSON-like text while respecting strings."""
-    result = []
-    in_string = False
-    escape = False
-    i = 0
-    while i < len(text):
-        ch = text[i]
-        # Handle escape inside strings
-        if in_string:
-            result.append(ch)
-            if escape:
-                escape = False
-            elif ch == '\\':
-                escape = True
-            elif ch == '"':
-                in_string = False
-            i += 1
-            continue
-        # Outside strings: detect start of string
-        if ch == '"':
-            in_string = True
-            result.append(ch)
-            i += 1
-            continue
-        # Outside strings: detect // comment
-        if ch == '/' and i + 1 < len(text) and text[i + 1] == '/':
-            # Skip until end of line
-            while i < len(text) and text[i] not in {'\n', '\r'}:
-                i += 1
-            # Preserve newline if present
-            if i < len(text):
-                result.append(text[i])
-                i += 1
-            continue
-        # Default: copy char
-        result.append(ch)
-        i += 1
-    return ''.join(result)
-
-
-def load_config():
-    """Load configuration from config.json (supports // comments)."""
-    config_path = Path(__file__).parent / "config.json"
-    with open(config_path, 'r', encoding='utf-8') as f:
-        content = f.read()
-
-    cleaned_content = strip_json_comments(content)
-    config = json.loads(cleaned_content)
-    enabled = config.get('enabled_categories', []) or []
-    # Normalize to uppercase and trim whitespace
-    return [c.strip().upper() for c in enabled if isinstance(c, str) and c.strip()]
 
 def is_category_enabled(category, enabled_categories):
     """Check if a category is enabled (handles compound categories like 'DUCKY HEXCASTING')"""
@@ -150,9 +105,8 @@ def update_file_with_categories(file_path, enabled_categories):
     return categories
 
 def main():
-    # Load configuration
-    enabled_categories = load_config()
-    print(f"{Colors.CYAN}Enabled categories: {', '.join(enabled_categories)}{Colors.RESET}\n")
+    enabled_categories = [c.strip().upper() for c in DEFAULT_ENABLED_CATEGORIES if c.strip()]
+    print(f"{Colors.CYAN}Enabled categories (from script): {', '.join(enabled_categories)}{Colors.RESET}\n")
     
     root_path = Path(__file__).parent
     
