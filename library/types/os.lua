@@ -52,4 +52,16 @@
 ---| '"websocket_message"' # Fired when a websocket message is received.<hr/>[Official Documentation](https://tweaked.cc/event/websocket_message.html)
 ---| '"websocket_success"' # Fired when a websocket connection succeeds.<hr/>[Official Documentation](https://tweaked.cc/event/websocket_success.html)
 ---| '"file_transfer"' # Fired when a file is dragged and dropped on an open computer.<hr/>[Official Documentation](https://tweaked.cc/event/file_transfer.html)
----| string
+--- CREATE MOD EVENTS
+---| '"package_created"' # Triggers when a package is created.<hr/>[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/logistics/packager#package_created)
+---| '"package_received"' # Triggers when a package is received.<hr/>[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/logistics/packager#package_received)
+---| '"package_sent"' # Triggers when a package is sent.<hr/>[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/logistics/packager#package_sent)
+---| '"train_imminent"' # Triggers when a train is imminent. <hr/>[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/train/train-station#train_imminent)
+---| '"train_arrival"' # Triggers when a train arrives at the station. <hr/>[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/train/train-station#train_arrival)
+---| '"train_departure"' # Triggers when a train departs from the station. <hr/>[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/train/train-station#train_departure)
+---| '"train_signal_state_changed"' # Triggers when a train signal's state changes. <hr/>[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/train/train-signal#train_signal_state_changed)
+---| '"train_passing"' # Triggers when the observer detects a train. <hr/>[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/train/train-observer#train_passing)
+---| '"train_passed"' # Triggers whenever a train enters the observer's range. <hr/>[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/train/train-observer#train_passed)
+---| '"speed"' # Triggers when speed changes. <hr/>[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/speedometer#speed_change)
+---| '"overstressed"' # Triggers when overstressed. <hr/>[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/stressometer#overstressed)
+---| '"stress_change"' # Triggers when stress changes. <hr/>[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/stressometer#stress_change)
