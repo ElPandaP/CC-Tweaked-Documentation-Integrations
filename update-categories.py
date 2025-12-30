@@ -105,7 +105,7 @@ def update_file_with_categories(file_path, enabled_categories):
     return categories
 
 def main():
-    enabled_categories = [c.strip().upper() for c in DEFAULT_ENABLED_CATEGORIES if c.strip()]
+    enabled_categories = [c.strip().upper() for c in ENABLED_CATEGORIES if c.strip()]
     print(f"{Colors.CYAN}Enabled categories (from script): {', '.join(enabled_categories)}{Colors.RESET}\n")
     
     root_path = Path(__file__).parent
