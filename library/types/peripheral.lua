@@ -30,7 +30,7 @@
 ---|ccTweaked.peripherals.Printer
 ---|ccTweaked.peripherals.Speaker
 ---|ccTweaked.peripherals.WiredModem
---- CREATE MOD PERIPHERALS
+--- CREATE PERIPHERALS
 ---|ccTweaked.peripherals.DisplayLink
 ---|ccTweaked.peripherals.Frogport
 ---|ccTweaked.peripherals.NixieTube
@@ -49,6 +49,15 @@
 ---|ccTweaked.peripherals.TrainObserver
 ---|ccTweaked.peripherals.TrainSignal
 ---|ccTweaked.peripherals.TrainStation
+--- DUCKY PERIPHERALS
+---|ccTweaked.peripherals.EntityDetector
+---|ccTweaked.peripherals.WeatherMachine
+--- DUCKY HEXCASTING PERIPHERALS
+---|ccTweaked.peripherals.FocalPort
+---|ccTweaked.peripherals.Slate
+---|ccTweaked.peripherals.AkashicBookshelf
+---|ccTweaked.peripherals.AkashicRecord
+---|ccTweaked.peripherals.Impetus
 
 ---@alias ccTweaked.peripherals.modem.channel integer A channel to be used with a modem (0 - 65535)
 

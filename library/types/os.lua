@@ -52,7 +52,7 @@
 ---| '"websocket_message"' # Fired when a websocket message is received.<hr/>[Official Documentation](https://tweaked.cc/event/websocket_message.html)
 ---| '"websocket_success"' # Fired when a websocket connection succeeds.<hr/>[Official Documentation](https://tweaked.cc/event/websocket_success.html)
 ---| '"file_transfer"' # Fired when a file is dragged and dropped on an open computer.<hr/>[Official Documentation](https://tweaked.cc/event/file_transfer.html)
---- CREATE MOD EVENTS
+--- CREATE EVENTS
 ---| '"package_created"' # Triggers when a package is created.<hr/>[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/logistics/packager#package_created)
 ---| '"package_received"' # Triggers when a package is received.<hr/>[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/logistics/packager#package_received)
 ---| '"package_sent"' # Triggers when a package is sent.<hr/>[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/logistics/packager#package_sent)
@@ -65,3 +65,14 @@
 ---| '"speed"' # Triggers when speed changes. <hr/>[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/speedometer#speed_change)
 ---| '"overstressed"' # Triggers when overstressed. <hr/>[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/stressometer#overstressed)
 ---| '"stress_change"' # Triggers when stress changes. <hr/>[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/stressometer#stress_change)
+--- DUCKY EVENTS
+---| '"new_entity"' # Fires when an entity spawns or enters the range. <hr/>[Official Documentation](https://github.com/SamsTheNerd/ducky-periphs/wiki/Entity-Detector)
+---| '"removed_entity"' # Fires when an entity dies or leaves the range. <hr/>[Official Documentation](https://github.com/SamsTheNerd/ducky-periphs/wiki/Entity-Detector)
+---| '"shutdown"' # Fires when you use the shutdown shortcut on the keyboard peripheral. <hr/>[Official Documentation](https://github.com/SamsTheNerd/ducky-periphs/wiki/keyboard#events)
+---| '"reboot"' # Fires when you use the reboot shortcut on the keyboard peripheral. <hr/>[Official Documentation](https://github.com/SamsTheNerd/ducky-periphs/wiki/keyboard#events)
+---| '"vibration"' # Fires when the sculkophone detects a vibration. <hr/>[Official Documentation](https://github.com/SamsTheNerd/ducky-periphs/wiki/Sculkophone#events)
+--- DUCKY HEXCASTING EVENTS
+---| '"new_iota"' # Fires when the focal port has a new iota written to it from the hex casting side. <hr/>[Official Documentation](https://github.com/SamsTheNerd/ducky-periphs/wiki/Focal-Port#events)
+---| '"circle_activated"' # Fires when the impetus is activated. <hr/>[Official Documentation](https://github.com/SamsTheNerd/ducky-periphs/wiki/HexCasting-Peripherals#events)
+---| '"circle_stopped"' # Fires when the impetus finishes or mishaps. <hr/>[Official Documentation](https://github.com/SamsTheNerd/ducky-periphs/wiki/HexCasting-Peripherals#events)
+--- 
