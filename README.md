@@ -1,12 +1,18 @@
-# CC: Tweaked Documentation
+# CC: Tweaked Documentation + Integrations
 This documentation covers the Lua API for [ComputerCraft: Tweaked](https://tweaked.cc/) and is meant to be used with [Sumneko's Lua Language Server](https://github.com/LuaLS/lua-language-server) as it uses its LuaCATS annotation system.
+This is a fork from [CC-Tweaked Documentation](https://gitlab.com/carsakiller/cc-tweaked-documentation) that adds support to some mods
+
+#### Currently supported
+- Create (partially)
+#### Planned
+- Advanced Peripherals
+- Ducky Peripherals
+- CC:C Bridge
+- Turtlematic
+- UnlimitedPeripheralWorks
 
 ## Setup
 
-### VS Code
-This project has been included in [LLS-Addons](https://github.com/LuaLS/LLS-Addons) and is available in the addon manager in VS Code! It can also be [installed manually](https://luals.github.io/wiki/addons/#installing-addons).
-
-### Other Clients
 1. Download this repository
 2. Set up a folder for containing addons, if you do not already have one.
 3. In this folder, create a new folder named `CC-Tweaked`.
