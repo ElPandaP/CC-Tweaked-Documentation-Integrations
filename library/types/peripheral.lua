@@ -30,6 +30,25 @@
 ---|ccTweaked.peripherals.Printer
 ---|ccTweaked.peripherals.Speaker
 ---|ccTweaked.peripherals.WiredModem
+--- CREATE MOD PERIPHERALS
+---|ccTweaked.peripherals.DisplayLink
+---|ccTweaked.peripherals.Frogport
+---|ccTweaked.peripherals.NixieTube
+---|ccTweaked.peripherals.OrderData
+---|ccTweaked.peripherals.Package
+---|ccTweaked.peripherals.Packager
+---|ccTweaked.peripherals.Postbox
+---|ccTweaked.peripherals.RedstoneRequester
+---|ccTweaked.peripherals.RotationalSpeedController
+---|ccTweaked.peripherals.SequencedGearshift
+---|ccTweaked.peripherals.Speedometer
+---|ccTweaked.peripherals.Sticker
+---|ccTweaked.peripherals.StockTicker
+---|ccTweaked.peripherals.Stressometer
+---|ccTweaked.peripherals.TableCloth
+---|ccTweaked.peripherals.TrainObserver
+---|ccTweaked.peripherals.TrainSignal
+---|ccTweaked.peripherals.TrainStation
 
 ---@alias ccTweaked.peripherals.modem.channel integer A channel to be used with a modem (0 - 65535)
 
