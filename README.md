@@ -1,4 +1,4 @@
-# CC: Tweaked Documentation
+# CC: Tweaked Documentation + Integrations
 This documentation covers the Lua API for [ComputerCraft: Tweaked](https://tweaked.cc/) and is meant to be used with [Sumneko's Lua Language Server](https://github.com/LuaLS/lua-language-server) as it uses its LuaCATS annotation system.
 This is a fork from [CC-Tweaked Documentation](https://gitlab.com/carsakiller/cc-tweaked-documentation) that adds support to some mods
 
