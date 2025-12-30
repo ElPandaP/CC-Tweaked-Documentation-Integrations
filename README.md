@@ -1,13 +1,13 @@
 # CC: Tweaked Documentation + Integrations
 This documentation covers the Lua API for [ComputerCraft: Tweaked](https://tweaked.cc/) and is meant to be used with [Sumneko's Lua Language Server](https://github.com/LuaLS/lua-language-server) as it uses its LuaCATS annotation system.
 This is a fork from [CC-Tweaked Documentation](https://gitlab.com/carsakiller/cc-tweaked-documentation) that adds support to some mods
-
+## Integrations list
 #### Currently supported
-- Create (partially)
-#### Planned
-- Advanced Peripherals
+- Create
 - Ducky Peripherals
 - CC:C Bridge
+#### Planned
+- Advanced Peripherals
 - Turtlematic
 - UnlimitedPeripheralWorks
 
@@ -18,6 +18,7 @@ This is a fork from [CC-Tweaked Documentation](https://gitlab.com/carsakiller/cc
 3. In this folder, create a new folder named `CC-Tweaked`.
 4. Paste the contents from this repo in this new `CC-Tweaked` folder.
 5. Edit your [configuration file](https://luals.github.io/wiki/configuration/#configuration-file) and add the path to the folder containing your new `CC-Tweaked` folder to [`workspace.userThirdParty`](https://luals.github.io/wiki/settings/#workspaceuserthirdparty).
+6. If you want to disable some integrations, you should comment the integrations you want to disable in "config.json", then execute the python script "update-categories.py" (If you don't want to execute the script you can manually comment each category on peripheral.lua and os.lua inside library/types)
 
 Now when you trigger one of the below cases you should be prompted to set up your workspace as a `CC: Tweaked` environment.
 
