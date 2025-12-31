@@ -8,12 +8,17 @@ The enabled categories list now lives in this script (no longer read from config
 import re
 from pathlib import Path
 
-# Default enabled categories are defined here (moved from config.json).
+# Enabled categories, you can comment the ones you want to disable
 ENABLED_CATEGORIES = [
     "CREATE",
     "DUCKY",
     "HEXCASTING",
     "CC:CBRIDGE",
+    "ADVANCEDPERIPHERALS",
+    "AE2",
+    "RS",
+    "MINECOLONIES",
+    "BOTANIA",
 ]
 
 # Terminal colors
@@ -41,10 +46,11 @@ def find_categories_in_file(file_path):
     """Find all category markers in a file and return their positions"""
     with open(file_path, 'r', encoding='utf-8') as f:
         lines = f.readlines()
-    
+
     categories = []
-    category_pattern = re.compile(r'^--- ([A-Z\s]+)$')
-    
+    # Allow category names with numbers/colons (e.g., CC:CBRIDGE, AE2)
+    category_pattern = re.compile(r'^--- ([A-Z0-9:]+(?: [A-Z0-9:]+)*)$')
+
     for i, line in enumerate(lines):
         match = category_pattern.match(line)
         if match:
@@ -56,7 +62,7 @@ def find_categories_in_file(file_path):
                     'line': i,
                     'text': line.strip()
                 })
-    
+
     return categories, lines
 
 def update_file_with_categories(file_path, enabled_categories):
@@ -77,7 +83,12 @@ def update_file_with_categories(file_path, enabled_categories):
         if idx + 1 < len(categories):
             end_line = categories[idx + 1]['line']
         else:
+            # Stop at the first doc-annotation (---@...) after the last category
             end_line = len(lines)
+            for probe_idx in range(start_line + 1, len(lines)):
+                if lines[probe_idx].lstrip().startswith('---@'):
+                    end_line = probe_idx
+                    break
         
         # Check if category should be enabled
         should_enable = is_category_enabled(category_name, enabled_categories)

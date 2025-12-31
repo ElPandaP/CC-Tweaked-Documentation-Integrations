@@ -31,24 +31,24 @@
 ---|ccTweaked.peripherals.Speaker
 ---|ccTweaked.peripherals.WiredModem
 --- CREATE PERIPHERALS
----|ccTweaked.peripherals.DisplayLink
----|ccTweaked.peripherals.Frogport
----|ccTweaked.peripherals.NixieTube
----|ccTweaked.peripherals.OrderData
----|ccTweaked.peripherals.Package
----|ccTweaked.peripherals.Packager
----|ccTweaked.peripherals.Postbox
----|ccTweaked.peripherals.RedstoneRequester
----|ccTweaked.peripherals.RotationalSpeedController
----|ccTweaked.peripherals.SequencedGearshift
----|ccTweaked.peripherals.Speedometer
----|ccTweaked.peripherals.Sticker
----|ccTweaked.peripherals.StockTicker
----|ccTweaked.peripherals.Stressometer
----|ccTweaked.peripherals.TableCloth
----|ccTweaked.peripherals.TrainObserver
----|ccTweaked.peripherals.TrainSignal
----|ccTweaked.peripherals.TrainStation
+--- ---|ccTweaked.peripherals.DisplayLink
+--- ---|ccTweaked.peripherals.Frogport
+--- ---|ccTweaked.peripherals.NixieTube
+--- ---|ccTweaked.peripherals.OrderData
+--- ---|ccTweaked.peripherals.Package
+--- ---|ccTweaked.peripherals.Packager
+--- ---|ccTweaked.peripherals.Postbox
+--- ---|ccTweaked.peripherals.RedstoneRequester
+--- ---|ccTweaked.peripherals.RotationalSpeedController
+--- ---|ccTweaked.peripherals.SequencedGearshift
+--- ---|ccTweaked.peripherals.Speedometer
+--- ---|ccTweaked.peripherals.Sticker
+--- ---|ccTweaked.peripherals.StockTicker
+--- ---|ccTweaked.peripherals.Stressometer
+--- ---|ccTweaked.peripherals.TableCloth
+--- ---|ccTweaked.peripherals.TrainObserver
+--- ---|ccTweaked.peripherals.TrainSignal
+--- ---|ccTweaked.peripherals.TrainStation
 --- DUCKY PERIPHERALS
 ---|ccTweaked.peripherals.EntityDetector
 ---|ccTweaked.peripherals.WeatherMachine
@@ -63,6 +63,36 @@
 ---|ccTweaked.peripherals.RedRouter
 ---|ccTweaked.peripherals.ScrollerPane
 ---|ccTweaked.peripherals.Animatronic
+--- ADVANCEDPERIPHERALS PERIPHERALS
+--- ---|ccTweaked.peripherals.ChatBox
+--- ---|ccTweaked.peripherals.EnergyDetector
+--- ---|ccTweaked.peripherals.EnvironmentDetector
+--- ---|ccTweaked.peripherals.PlayerDetector
+--- ---|ccTweaked.peripherals.InventoryManager
+--- ---|ccTweaked.peripherals.NBTStorage
+--- ---|ccTweaked.peripherals.BlockReader
+--- ---|ccTweaked.peripherals.GeoScanner
+--- ---|ccTweaked.peripherals.RedstoneIntegrator
+--- ---|ccTweaked.peripherals.WeakAutomata
+--- ---|ccTweaked.peripherals.HusbandryAutomata
+--- ---|ccTweaked.peripherals.EndAutomata
+--- ---|ccTweaked.peripherals.ARController
+--- ADVANCEDPERIPHERALS AE2 PERIPHERALS
+--- ---|ccTweaked.peripherals.MEBridge
+--- ADVANCEDPERIPHERALS RS PERIPHERALS
+--- ---|ccTweaked.peripherals.RSBridge
+--- ADVANCEDPERIPHERALS MINECOLONIES PERIPHERALS
+--- ---|ccTweaked.peripherals.ColonyIntegrator
+--- ADVANCEDPERIPHERALS BOTANIA PERIPHERALS
+--- ---|ccTweaked.peripherals.ManaFlower
+--- ---|ccTweaked.peripherals.ManaPool
+--- ---|ccTweaked.peripherals.ManaSpreader
+--- ADVANCEDPERIPHERALS CREATE PERIPHERALS
+--- ---|ccTweaked.peripherals.Basin
+--- ---|ccTweaked.peripherals.BlazeBurner
+--- ---|ccTweaked.peripherals.FluidTank
+--- ---|ccTweaked.peripherals.MechanicalMixer
+--- ---|ccTweaked.peripherals.ScrollBehaviour
 
 ---@alias ccTweaked.peripherals.modem.channel integer A channel to be used with a modem (0 - 65535)
 
