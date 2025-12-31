@@ -4,13 +4,13 @@
 Animatronic = {}
 
 ---Changes the face of the animatronic.
----@param face string The new face: "normal", "happy", "question", or "sad".
+---@param face "normal" | "happy" | "question" | "sad" The new face.
 ------
 ---[Official Documentation](https://cccbridge.kleinbox.dev/peripherals/AnimatronicPeripheral/)
 function Animatronic.setFace(face) end
 
 ---Sets the animation transition mode.
----@param kind string The transition mode: "linear", "none", or "rusty".
+---@param kind "linear" | "none" | "rusty" The transition mode.
 ------
 ---[Official Documentation](https://cccbridge.kleinbox.dev/peripherals/AnimatronicPeripheral/)
 function Animatronic.setTransition(kind) end
