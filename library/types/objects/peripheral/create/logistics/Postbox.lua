@@ -10,7 +10,7 @@ Postbox = {}
 function Postbox.getAddress() end
 
 ---Gets the PostBox's configuration
----@return string configuration With either "send_recieve" or "send" as the configuration.
+---@return "send_recieve" | "send" configuration With either "send_recieve" or "send" as the configuration.
 ------
 ---[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/logistics/postbox#getConfiguration)
 function Postbox.getConfiguration() end
@@ -35,7 +35,7 @@ function Postbox.list() end
 function Postbox.setAddress(address) end
 
 ---Sets the PostBox's configuration to either "send_recieve" or "send"
----@param configuration string The desired configuration, either "send_recieve" or "send".
+---@param configuration "send_recieve" | "send" The desired configuration, either "send_recieve" or "send".
 ------
 ---[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/logistics/postbox#setConfiguration)
 function Postbox.setConfiguration(configuration) end

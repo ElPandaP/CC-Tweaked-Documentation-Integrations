@@ -9,7 +9,7 @@ RedstoneRequester = {}
 function RedstoneRequester.getAddress() end
 
 ---Gets the Redstone Requester's configuration
----@return string configuration With either "allow_partial" or "strict" as the configuration.
+---@return "allow_partial" | "strict" configuration With either "allow_partial" or "strict" as the configuration.
 ------
 ---[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/logistics/redstone-requester#getConfiguration)
 function RedstoneRequester.getConfiguration() end
@@ -32,7 +32,7 @@ function RedstoneRequester.request() end
 function RedstoneRequester.setAddress(address) end
 
 ---Sets the Redstone Requester's configuration to either "strict" or "allow_partial"
----@param configuration string The desired configuration, either "strict" or "allow_partial".
+---@param configuration "allow_partial" | "strict" The desired configuration, either "strict" or "allow_partial".
 ------
 ---[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/logistics/redstone-requester#setConfiguration)
 function RedstoneRequester.setConfiguration(configuration) end

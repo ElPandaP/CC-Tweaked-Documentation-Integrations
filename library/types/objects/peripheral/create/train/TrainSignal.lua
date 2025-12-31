@@ -4,7 +4,7 @@
 TrainSignal = {}
 
 ---Gets the train signal's currently displayed signal
----@return string state The color of the signal - either "RED", "GREEN" or "YELLOW".
+---@return "RED" | "GREEN" | "YELLOW" state The color of the signal - either "RED", "GREEN" or "YELLOW".
 ------
 ---[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/train/train-signal#getState)
 function TrainSignal.getState() end
@@ -22,7 +22,7 @@ function TrainSignal.isForcedRed() end
 function TrainSignal.setForcedRed(forced) end
 
 ---Gets the train signal's signal type
----@return string signalType The signal type - either "ENTRY_SIGNAL" or "CROSS_SIGNAL".
+---@return "ENTRY_SIGNAL" | "CROSS_SIGNAL" signalType The signal type - either "ENTRY_SIGNAL" or "CROSS_SIGNAL".
 ------
 ---[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/train/train-signal#getSignalType)
 function TrainSignal.getSignalType() end

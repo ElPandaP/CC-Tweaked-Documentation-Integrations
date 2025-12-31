@@ -10,7 +10,7 @@ Frogport = {}
 function Frogport.getAddress() end
 
 ---Gets the Frogport's configuration
----@return string configuration With either "send_recieve" or "send" as the configuration.
+---@return "send_recieve" | "send" configuration With either "send_recieve" or "send" as the configuration.
 ------
 ---[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/logistics/package-frogport#getConfiguration)
 function Frogport.getConfiguration() end
@@ -35,7 +35,7 @@ function Frogport.list() end
 function Frogport.setAddress(address) end
 
 ---Sets the Frogport's configuration to either "send_recieve" or "send"
----@param configuration string The desired configuration, either "send_recieve" or "send".
+---@param configuration "send_recieve" | "send" The desired configuration, either "send_recieve" or "send".
 ------
 ---[Official Documentation](https://wiki.createmod.net/users/cc-tweaked-integration/logistics/package-frogport#setConfiguration)
 function Frogport.setConfiguration(configuration) end
